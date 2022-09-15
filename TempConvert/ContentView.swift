@@ -13,17 +13,7 @@ struct ContentView: View {
     @State private var outputUnit = ["°C", "°F", "K", "°R"]
     
     var body: some View {
-        NavigationView {
-            Form {
-                Section {
-                    Picker("Temperature unit to convert from", selection: $inputUnit) {
-                        ForEach(inputUnit, id: \.self){
-                            Text($0, format: .number)
-                        }
-                    }.pickerStyle(.segmented)
-                }
-            }
-        }
+        
     }
 }
 
