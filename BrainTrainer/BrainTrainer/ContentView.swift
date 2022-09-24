@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var desiredOutcome = Bool.random()
     
     @State private var currentChoice = "Rock"
+    @State private var playerScore = 0
     
     var body: some View {
         VStack {
